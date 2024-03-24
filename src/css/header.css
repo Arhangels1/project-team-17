@@ -1,5 +1,5 @@
-.header {
-  padding: 20px 0;
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -28,6 +28,8 @@ nav {
 
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.10);
+  padding: 20px 0;
+  margin-bottom: 60px;
 }
 
 .header_logo_container {
@@ -36,9 +38,12 @@ nav {
   align-items: center;
 }
 
+<<<<<<< Updated upstream
 .header_logo {
   color: #0C0C0C;
 }
+=======
+>>>>>>> Stashed changes
 
 .mobile_menu_container {
   background: url("../img/header/menu_bg.jpg") #0C0C0CEB;
@@ -81,6 +86,25 @@ nav {
   align-items: center;
 }
 
+.mobile_menu_item {
+  position: relative;
+}
+
+.mobile_menu_link:hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 8px;
+  background: #3350E9;
+  border-radius: 100%;
+  width: 8px;
+  bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
 .mobile_nav {
   display: flex;
   flex-direction: column;
@@ -114,6 +138,10 @@ nav {
   margin-top: auto;
 }
 
+#header .social__item:hover svg {
+  fill: #3350E9;
+}
+
 
 #header .social__link:hover svg {
   fill: #3350E9;
@@ -126,12 +154,18 @@ nav {
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    padding: 26px 0;
+    margin-bottom: 80px;
+  }
+
   .mobile_menu_container {
     min-width: 330px;
   }
 }
 
 @media (min-width: 1280px) {
+
   .header_container {
     display: flex;
     align-items: center;
@@ -154,7 +188,8 @@ nav {
     transform: none;
     transition: none;
     background: none;
-    column-gap: 203px;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .mobile_nav {
