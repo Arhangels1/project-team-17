@@ -1,5 +1,5 @@
 .sale-section {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .sale-left-list {
@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
   .sale-section {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .sale-watches-box {
@@ -178,7 +178,7 @@
 
 @media screen and (min-width: 1280px) {
   .sale-section {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   .sale-pictures-box {

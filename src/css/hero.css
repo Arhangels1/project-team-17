@@ -1,5 +1,5 @@
 .section-hero {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .hero-main-wrapper {
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .hero-main-wrapper {
@@ -90,9 +90,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .section-hero {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   .hero-left-div {
