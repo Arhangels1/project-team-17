@@ -219,6 +219,11 @@
 
 /*------------------------ DESKTOP ---------------------------*/
 @media only screen and (min-width: 1280px) {
+   .page-footer .container {
+      padding-left: 32px;
+      padding-right: 32px;
+   }
+   
    .contacts-footer__phone {
       order: 3;
    }
