@@ -20,7 +20,7 @@ html {
 
 .mobile_menu_container {
   background: url("/img/header/menu_bg.jpg") #0C0C0CEB;
-  position: absolute;
+  position: fixed;
   height: 100%;
   right: 0;
   top: 0;
@@ -43,14 +43,13 @@ html {
   opacity: 0;
 }
 
-.icon-close {
-  stroke: #fbfbfb;
-}
 
 .btn-close {
   position: absolute;
   right: 20px;
+  top: 20px;
   z-index: 3;
+  stroke: #fbfbfb;
 }
 
 .icon-burger {
@@ -139,11 +138,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  .mobile_menu_container {
     padding-bottom: 50px;
   }
+
 }
 
 @media (min-width: 1280px) {
