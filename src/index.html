@@ -10,7 +10,7 @@
   </head>
   <body>
     <load scr="partials/header.html" />
-    <main>
+    <main class="page-main">
       <load scr="partials/hero.html" />
       <load scr="partials/about-us.html" />
       <load scr="partials/catalog.html" />
@@ -22,7 +22,23 @@
 
     <load scr="partials/footer.html" />
 
-    
+    <script>
+      const hamburger = document.querySelector(".btn-burger");
+      const navLinks = document.querySelector(".mobile_menu_container");
+      const close = document.querySelector(".btn-close");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("none");
+        close.classList.toggle("none");
+      });
+
+      close.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("none");
+        close.classList.toggle("none");
+      });
+    </script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
